@@ -288,19 +288,32 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 900;
             font-size: 4.5rem;
-            color: #fffdfa;
             margin-bottom: 20px;
-            text-shadow:
-                0 6px 20px rgba(0, 0, 0, 0.35),
-                0 0 65px rgba(255, 255, 255, 0.25);
             letter-spacing: -2px;
             line-height: 1.1;
-            background: linear-gradient(135deg, #ffffff 0%, #ffe9b5 45%, #ffffff 100%);
+            /* Premium Gold Gradient - Đẳng cấp và sang trọng */
+            background: linear-gradient(135deg, 
+                #FFD700 0%, 
+                #FFA500 20%, 
+                #FFD700 40%, 
+                #FFF8DC 50%, 
+                #FFD700 60%, 
+                #FFA500 80%, 
+                #FFD700 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            background-size: 180% auto;
-            animation: fadeInDown 1.2s ease-out, shimmerText 4s linear infinite;
+            background-size: 200% auto;
+            /* Premium Gold Shadow Effects - Ánh vàng đẳng cấp */
+            filter: drop-shadow(0 2px 8px rgba(255, 215, 0, 0.5))
+                    drop-shadow(0 4px 16px rgba(255, 165, 0, 0.4))
+                    drop-shadow(0 6px 24px rgba(255, 215, 0, 0.3))
+                    drop-shadow(0 8px 32px rgba(0, 0, 0, 0.3));
+            animation: fadeInDown 1.2s ease-out, shimmerGold 3s linear infinite;
+            text-shadow: 
+                0 0 30px rgba(255, 215, 0, 0.6),
+                0 0 60px rgba(255, 215, 0, 0.4),
+                0 4px 15px rgba(0, 0, 0, 0.5);
         }
 
         @keyframes shimmerText {
@@ -310,21 +323,24 @@
         @keyframes shimmerGold {
             0% {
                 background-position: 0% center;
-                filter: drop-shadow(0 2px 8px rgba(255, 215, 0, 0.4))
-                        drop-shadow(0 4px 16px rgba(255, 165, 0, 0.3))
-                        drop-shadow(0 8px 32px rgba(0, 0, 0, 0.2));
+                filter: drop-shadow(0 2px 8px rgba(255, 215, 0, 0.5))
+                        drop-shadow(0 4px 16px rgba(255, 165, 0, 0.4))
+                        drop-shadow(0 6px 24px rgba(255, 215, 0, 0.3))
+                        drop-shadow(0 8px 32px rgba(0, 0, 0, 0.3));
             }
             50% {
                 background-position: 100% center;
-                filter: drop-shadow(0 2px 12px rgba(255, 215, 0, 0.6))
-                        drop-shadow(0 4px 20px rgba(255, 165, 0, 0.5))
-                        drop-shadow(0 8px 40px rgba(0, 0, 0, 0.3));
+                filter: drop-shadow(0 2px 12px rgba(255, 215, 0, 0.7))
+                        drop-shadow(0 4px 20px rgba(255, 165, 0, 0.6))
+                        drop-shadow(0 6px 28px rgba(255, 215, 0, 0.5))
+                        drop-shadow(0 8px 40px rgba(0, 0, 0, 0.4));
             }
             100% {
                 background-position: 200% center;
-                filter: drop-shadow(0 2px 8px rgba(255, 215, 0, 0.4))
-                        drop-shadow(0 4px 16px rgba(255, 165, 0, 0.3))
-                        drop-shadow(0 8px 32px rgba(0, 0, 0, 0.2));
+                filter: drop-shadow(0 2px 8px rgba(255, 215, 0, 0.5))
+                        drop-shadow(0 4px 16px rgba(255, 165, 0, 0.4))
+                        drop-shadow(0 6px 24px rgba(255, 215, 0, 0.3))
+                        drop-shadow(0 8px 32px rgba(0, 0, 0, 0.3));
             }
         }
 
